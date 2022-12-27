@@ -1,0 +1,4 @@
+ÄÄ±¸Á¶ 3.4 Report 1
+Consider a hypothetical microprocessor generating a 16-bit address
+(for example,assume that the program counter and the address registers are 16 bits wide)
+and having a 16-bit data bus.

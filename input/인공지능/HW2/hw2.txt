@@ -1,0 +1,17 @@
+Homework #2
+2021. 2학기. 인공지능
+제출일: 2021/10/19
+
+HW2
+
+
+1. (Predicate Logic) 다음의 문장들을 보고 답하시오.
+
+2. (Resolution Refutation) 다음 문장들을 보고 답하시오.
+
+3. (Naive Bayesian Classifier) 어떤 과학 분야 문서들을 Physics, Biology, Chemistry 등 세 가지 카테고리로 분류한다고 하자.
+다음의 확률은 웹에서 수집되어 전문가에 의해 미리 분류된 웹페이지들의 텍스트를 분석하여 추정되었다.
+예를 들어 Physics에 해당하는 문서에서 ‘atom'이라는 단어가 나타날 확률은 0.1 이었다.
+
+5. (Hidden Markov Model) Hidden states S1, S2, S3의 transition probability와 각 state에서의   
+   observation R, G, B의 output probability가 다음과 같다고 하자.

@@ -1,0 +1,7 @@
+Report 2
+1. 다음 article을 읽고 물음에 답하시오. 단 모든 답은 우리말을 사용한다. (80 pts)
+John L. Hennessy and David A. Patterson, “A New Golden Age for Computer Architecture”, Communications of the ACM, Feb. 2019
+
+(3) ILP가 무엇인지 설명하고, 2006년 이후 ILP를 증가시키는 것이 왜 비효율적인지 말하시오.\
+
+컴퓨터 구조 5월 22일까지

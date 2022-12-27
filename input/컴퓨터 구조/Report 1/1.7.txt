@@ -1,0 +1,4 @@
+ÄÄ±¸Á¶ 1.7 Report 1
+The relative performance of the IBM 360 Model 75 is 50 times that of the 360 Model 30,
+yet the instruction cycle time is only 5 times as fast.
+How do you account for this discrepancy?

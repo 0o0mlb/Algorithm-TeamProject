@@ -1,0 +1,10 @@
+제목: Cache simulator
+내용: Report 3
+(1) GitHub 등의 open source portal을 search하여 완료된(또는 진행 중인) project를 선택
+선택 기준은 따로 없으며 사용 language, tool 등의 제한이 없음
+(2) Simulator를 실행해 보고, 실행 결과와 의미를 분석하며 보고서 작성
+(3) Simulator를 upgrade하여 (2)의 과정을 다시 한다.
+Upgrade의 내용은 무엇이든 상관없음
+(예를 들어 2-level을 3-level로, 8-way를 16-way로, sectored cache로 구현 등
+
+컴퓨터구조 코딩 과제

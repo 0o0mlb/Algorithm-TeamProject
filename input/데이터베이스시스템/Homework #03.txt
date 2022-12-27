@@ -1,0 +1,15 @@
+Homework #03
+
+- COMPANY 스키마에 대해서 다음의 질의를 SQL, Relational Algebra, Tuple Relational Calculus로 작성하시오.
+
+Query 0. Retrieve the birth date and address of the employee(s) whose name is ‘John B.smith.’
+Query 1. Retrieve the name and address of all employees who work for the ‘Research’department. 
+Query 2. For every project located in ‘Stafford’, list the project number, the controlling department number, and the department manager’s last name, address, and birth date. 
+Query 3. Find the names of employees who work on all the projects controlled by department number 5.
+Query 3’. List the name of each employee who works on some project controlled by department number 5.
+Query 4. Make a list of all project numbers for projects that involve an employee whose last name is ‘Smith’, either as a worker or as a manager of the department that controls the project. 
+Query 6. Retrieve the names of employees who have no dependents.
+Query 7. List the names of managers who have at least on dependent.
+Query 8. For each employee, retrieve the employees’ first and last name and the first and last name of his or her immediate supervisor.
+
+- 데이터베이스시스템, 2018112600, 장지원

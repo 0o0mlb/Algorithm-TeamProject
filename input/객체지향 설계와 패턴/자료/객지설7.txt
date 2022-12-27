@@ -1,0 +1,111 @@
+객체지향 설계와 패턴
+
+4. 상태(State) 패턴
+단일 상품을 판매하는 자판기에 들어갈 소프트웨어를 개발해 달라는 요구가 들어왔습니다. 이 자판기의 동작 방식은 아래와 같은 조건으로 동작합니다.
+
+동전이 없을 때 동전을 넣으면 자판기 금액 표시란에 금액이 증가하고 제품 선택이 가능합니다.
+제품 선택이 가능하면 동전을 넣으면 금액이 증가하고 제품 선택이 가능합니다.
+동전이 없을때 제품을 선택하면 아무런 동작을 하지 않고 동전 없음이라는 표시가 유지됩니다.
+제품 선택 가능이면 제품을 선택하고 자판기에서 제품을 주고 잔액이 감소합니다. 결과적으로 잔액이 있으면 제품 선택이 가능하고, 없으면 동전이 없다고 표시됩니다.
+아래 코드는 자판기 프로그램의 담당자는 조건에 따라 다른 코드를 실행해야 한다는 판단을 하고, 아래와 같이 코드를 작성하였습니다.
+
+public class VendingMachine {
+
+    public static enum State { NOCOIN, SELECTABLE }
+    
+    private State state = State.NOCOIN;
+
+    public void insertCoin(int coin) {
+        
+        switch(state) {
+            case NOCOIN:
+                increaseCoin(coin);
+                state = State.SELECTABLE;
+                break;
+            case SELECTABLE:
+                increaseCoin(coin);
+                break;
+        } 
+    }
+
+    public void select(int productId) {
+        switch(state) {
+            case NOCOIN:
+                // 아무것도 하지 않음
+                break;
+            case SELECTABLE:
+                decreaseCoin();
+                if(hasNoCoin()) {
+                    state = State.NOCOIN;
+                }
+        }
+    }
+
+    ..// increaseCoin, provideProduct, decreaseCoin 구현
+}
+자판기 프로그램을 구현하는 도중에 다음과 같은 새로운 요구사항이 들어왔습니다.
+자료
+자판기에 제품이 없는 경우에는 동전을 넣으면 바로 동전을 되돌려 줍니다.
+이 기능을 추가하기 위해 자판기 프로그램은 아래 코드처럼 바뀝니다.
+
+public class VendingMachine {
+
+    public static enum State { NOCOIN, SELECTABLE, SOLDOUT }
+    
+    private State state = State.NOCOIN;
+
+    public void insertCoin(int coin) {
+        
+        switch(state) {
+            case NOCOIN:
+                increaseCoin(coin);
+                state = State.SELECTABLE;
+                break;
+            case SELECTABLE:
+                increaseCoin(coin);
+                break;
+            case SOLDOUT:
+                resultCoin();
+                break;
+        } 
+    }
+
+    public void select(int productId) {
+        switch(state) {
+            case NOCOIN:
+                // 아무것도 하지 않음
+                break;
+            case SELECTABLE:
+                decreaseCoin();
+                if(hasNoCoin()) {
+                    state = State.NOCOIN;
+                }
+            case SOLDOUT:
+                // 아무 것도 하지 않음
+        }
+    }
+
+    ..// increaseCoin, provideProduct, decreaseCoin 구현
+}
+또 다시, 자동세척 증일 때에도 동전을 넣으면 바로 돌려줘야 한다는 요구 사항이 추가되었습니다. 이 요구사항을 충족하기 위해 insertCoin() 메서드와 select() 메서드에 또 다른 조건문이 추가될 것입니다.
+
+위 코드에서는 insertCoin() 메서드와 select() 메서드는 동일한 구조의 조건문을 갖고 있습니다. 이는 상태가 많아질수록 복잡해지는 조건문이 여러 코드에서 중복해서 출현하고, 그만큼 코드 변경을 어렵게 만든다는 것을 의미합니다.(예를 들어, 새로운 상태를 추가하거나 기존 상태를 빼려면 모든 조건문을 찾아서 수정해줘야 합니다.)
+
+VendingMachine 클래스의 코드를 다시 한번 살펴보면, 조건문은 다음과 같은 의미를 내포하고 있습니다.
+
+상태에 따라 동일한 기능 요청의 처리를 다르게 합니다.
+예를 들어, insertCoin() 메서드는 아래 코드와 같이 NOCOIN이냐, SELECTABLE이냐, 또는 SOLDOUT이냐에 따라서 다르게 동작하고 있습니다.
+
+ switch(state) {
+    case NOCOIN:
+        increaseCoin(coin);
+        state = State.SELECTABLE;
+        break;
+    case SELECTABLE:
+        increaseCoin(coin);
+        break;
+    case SOLDOUT:
+         resultCoin();
+         break;
+} 
+select() 메서드 역시 insertCoin() 메서드와 동일하게 상태에 따라 다르게 동작합니다. 이렇게 기능이 상태에 따라 다르게 동작해야할 때 사용할 수 있는 패턴이 상태 패턴입니다. 상태 패턴에서는 상태를 아래 그림과 같이 별도 타입으로 분리하고, 각 상태 별로 알맞은 하위타입을 구현합니다.

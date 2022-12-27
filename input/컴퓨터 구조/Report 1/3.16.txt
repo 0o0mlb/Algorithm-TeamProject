@@ -1,0 +1,8 @@
+컴퓨터구조 3.16
+The Intel 8086 is a 16-bit processor similar in many ways to the 8-bit 8088.
+The 8086 uses a 16-bit bus that can transfer 2 bytes at a time,
+provided that the lower-order byte has an even address. Report 1
+However, the 8086 allows both even- and odd-aligned word operands.
+If an odd-aligned word is referenced, two memory cycles, each consisting of four bus cycles,
+are required to transfer the word. Consider an instruction on the 8086 that involves two 16-bit operands. How long does it take to fetch the operands?
+Give the range of possible answers. Assume a clocking rate of 4 MHz and no wait states.

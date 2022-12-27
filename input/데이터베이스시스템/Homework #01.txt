@@ -1,0 +1,25 @@
+Homework #01 -> 데이터베이스시스템
+
+- 다음에 대해 설명하시오.
+
+1. relation schema
+
+2. relation state
+
+3. relational database schema
+
+4. relational database state
+
+5. domain constraint
+
+6. key constraint
+
+7. entity integrity constraint
+
+8. referential integrity constraint
+
+9. null
+
+10. ordering tuples in a relation
+
+11. ordering attribute values within a tuple

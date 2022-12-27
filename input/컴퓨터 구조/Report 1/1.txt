@@ -1,0 +1,7 @@
+clock 속도가 1 GHz인 어떤 기계에서 benchmark program A, B, C를 실행한다.
+A는 100 million instruction을 실행하며 CPI는 1.2, B는 300 million instruction을 실행하고
+CPI는 1.6, C는 300 million instruction을 2000 MIPS로 실행한다.
+세 프로그램 전체를 고려할 때 CPI와 MIPS rate를 구하시오.
+
+Report 1
+컴퓨터구조 1

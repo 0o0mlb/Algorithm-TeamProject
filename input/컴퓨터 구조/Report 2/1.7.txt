@@ -1,0 +1,6 @@
+1. 다음 article을 읽고 물음에 답하시오. 단 모든 답은 우리말을 사용한다. (80 pts)
+John L. Hennessy and David A. Patterson, “A New Golden Age for Computer Architecture”, Communications of the ACM, Feb. 2019
+
+(7) RISC-V의 특징을 5가지 들고 설명하시오.
+Report 2
+컴구조 6월 3일까지

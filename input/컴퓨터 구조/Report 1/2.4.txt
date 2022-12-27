@@ -1,0 +1,8 @@
+ÄÄ±¸Á¶ 2.4
+
+Report 1
+The table shows the execution time in seconds,
+with 100,000,000 instructions executed in each of the four programs.
+Calculate the MIPS values for each computer for each program.
+Then calculate the arithmetic and harmonic means assuming equal weights for the four programs,
+and rank the computers based on arithmetic mean and harmonic mean.

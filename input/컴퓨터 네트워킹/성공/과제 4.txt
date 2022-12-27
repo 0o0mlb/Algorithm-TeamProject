@@ -1,0 +1,13 @@
+형언, 학번 : 2018112600, 이름 : 장지원
+
+과제 4
+실패
+
+P1. Consider the network below.
+a. Show the forwarding table in router A, such that all traffic destined to host H3 is forwarded through interface 3.
+b. Can you write down a forwarding table in router A, such that all traffic from H1 destined to host H3 is forwarded through interface 3, while all traffic from H2 destined to host H3 is forwarded through interface 4? (Hint : This is a trick question.)
+
+
+P5. Consider a datagram network using 32-bit host addresses. Suppose a router has four links, numbered 0 through 3, and packets are to be forwarded to the link interfaces as follows:
+a. Provide a forwarding table that has five entries, uses longest prefix matching, and forwards packets to the correct link interfaces.
+b. Describe how your forwarding table determines the appropriate link interface for datagrams with destination addresses:

@@ -1,0 +1,4 @@
+ÄÄ±¸Á¶ 3.7
+Consider two microprocessors having 8- and 16-bit-wide external data buses, respectively.
+Report 1
+The two processors are identical otherwise and their bus cycles take just as long.

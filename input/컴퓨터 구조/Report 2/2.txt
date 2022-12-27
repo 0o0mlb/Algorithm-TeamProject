@@ -1,0 +1,7 @@
+2. 다음의 사양을 가진 desktop PC가 있다. (50 pts)
+① 10세대 이후의 i7 processor, 16 GB DDR4 RAM
+② dual monitor를 지원하는 중저가형의 graphic card
+③ 256 GB SSD와 1 TB hard disk
+④ 2개의 24 inch monitor 위 PC를 하루 평균 8시간 사용한다고 했을 때 한 달(30일) 소모되는 전력량을 kWh로 계산해보시오. (단 위 사양 중 구체적인 내용과 기타 사항은 적절한 사양으로 가정하시오)
+ Report 2
+종강 다음날 11시 59분까지 컴퓨터 구조 과제란

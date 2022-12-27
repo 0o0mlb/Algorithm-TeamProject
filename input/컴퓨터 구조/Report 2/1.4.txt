@@ -1,0 +1,8 @@
+1. 다음 article을 읽고 물음에 답하시오. 단 모든 답은 우리말을 사용한다. (80 pts)
+John L. Hennessy and David A. Patterson, “A New Golden Age for Computer Architecture”, Communications of the ACM, Feb. 2019
+
+(4) Security가 침해된 예를 들고, architecture 분야에서 어떤 노력이 필요한지 설명하시오
+
+컴구조 5월 30일까지
+
+Report 2

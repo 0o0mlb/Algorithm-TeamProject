@@ -1,0 +1,7 @@
+ÄÄ±¸Á¶ 2.7
+Now assume that the program can be executed in eight parallel tasks or threads with roughly equal number of instructions executed in each task.
+Execution is on an 8-core system with each core (processor) having the same performance as the single processor originally used.
+Coordination and synchronization between the parts adds an extra 25,000 instruction executions to each task.
+Report 1
+Assume the same instruction mix as in the example for each task,
+but increase the CPI for memory reference with cache miss to 12 cycles due to contention for memory
