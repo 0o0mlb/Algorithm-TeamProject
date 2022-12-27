@@ -1,6 +1,6 @@
 # Algorithm-TeamProject
 
-####폴더 정리 프로그램
+#### 폴더 정리 프로그램
 
 
 해결 방안
